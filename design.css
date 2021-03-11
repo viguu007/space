@@ -1,0 +1,64 @@
+a:link
+	{
+		color:#a5fc03;
+		font-size:20px;
+		text-decoration:none;
+		font-family:Comic Sans MS;
+		font-weight:bolder;
+	}
+a:visited
+	{
+		color:#a5fc03;
+	}
+a:hover
+	{
+		color:red;
+		font-size:25px;
+	}
+th
+	{
+		background-color:#5e0003;
+		font-size:20px;
+		text-decoration:none;
+	}
+th:hover
+	{
+		background-color:white;
+		color:red;
+	}
+body
+	{
+		background-image:url("star.jpg");
+	}
+p
+	{
+		color:white;
+		font-family:Courier New;
+		font-size:18px;
+	}
+h2
+	{
+		color:#e8e8e8;
+		font-family:Helvetica;
+		font-size:30px;
+	}
+h3
+	{
+		color:#ffa1a1;
+		font-family:Lucida Sans;
+		font-size:25px;
+	}
+#t
+	{
+		color:black;
+		font-size:15px;
+		text-decoration:none;
+		font-family:Courier New;
+		font-weight:bolder;
+	}
+#t:hover
+	{
+		color:green;
+		font-size:20px;
+		text-decoration:none;
+	}

@@ -1,0 +1,177 @@
+<!Doctype.html>
+<html>
+	<head> 
+		<title> Subscription </title>
+		<script type="text/javascript" src="changer.js"> </script>
+		<style>
+			h2{
+				text-align:center;
+				font-family:Courier New;
+				font-size:30px;
+				font-weight:bolder;
+			}
+			p{
+				font-family:verdana;
+				font-size:15px;
+				text-indent:15px;
+			}
+		</style>
+	</head>
+	<body bgcolor="#f5f5dc">
+	<h2> Subscribe to receive our newsletter </h2>
+	<p>
+ Subscribe to our news-letter to get regular updates on what goes on beyond our Earth. It comes in exciting, affordable plans, and you can unsubscribe at any time.
+	</p> 
+	<table width="25%" border="2" cellspacing="0" id="plan" align="center">
+		<tr>
+			<th>PLAN</th>
+			<th>PRICE</th>
+		</tr>
+		<tr id="r1">
+			<td>YEARLY </td>
+			<td>Rs. 7200 </td>
+		</tr>
+		<tr id="r2">
+			<td>HALF-YEARLY</td>
+			<td>Rs. 3900 </td>
+		</tr>
+		<tr id="r3">
+			<td>QUARTER-YEARLY</td>
+			<td>Rs. 2100 </td>
+		</tr>
+		<tr id="r4">
+			<td>MONTHLY </td>
+			<td>Rs. 750 </td>
+		</tr>
+	</table>	
+
+	<form method="post">
+	<fieldset>
+		<legend > To subscribe: </legend>
+		<table>
+			<tr>
+				<th><label>First Name: </th></label>
+				<td> <input type="text" name="fname" placeholder="Enter Your First Name" size="25" maxsize="35"/></td>
+			</tr>
+			<tr>
+				<th><label>Last Name: </th></label>
+				<td> <input type="text" name="lname" placeholder="Enter Your Last Name" size=25 maxsize=35/></td>
+			</tr>
+			<tr>
+				<th><label>Email-ID: </th></label>
+				<td> <input type="text" name="eID" placeholder="Enter Your E-mail ID" size=25 maxsize=35/></td>
+			</tr>
+			<tr>
+				<th><label>Country of Residence: </th></label>
+				<td> 
+					<select id="ctry" onchange="ct()">
+						<option value="ind" selected>INDIA</option>
+           				<option value="qat">QATAR</option>
+						<option value="uae">UNITED ARAB EMIRATES</option>
+						<option value="usa">UNITED STATE OF AMERICA</option>
+           				<option value="uk">UNITED KINGDOM</option>
+						<option value="aus">AUSTRALIA</option>
+						<option value="rus">RUSSIA</option>
+						<option value="bah">BAHRAIN</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<th><label>Phone Number: </th></label>
+				<td> 
+					<label id="cd"> +91 </label>
+					<input type="number" id="phn" placeholder="xxxxxxxxxx" size="10" maxsize="10"/>
+				</td>
+			</tr>
+		</table>
+	</fieldset>
+	<fieldset>
+		<legend> Choose your plan </legend>
+		<table>
+			<tr>
+				<td> 
+					<select id="sub" onchange="cha()">
+						<option value="">----SELECT SUBSCRIPTION----</option>
+						<option value="1">YEARLY</option>
+						<option value="2">HALF-YEARLY</option>
+						<option value="3">QUARTER-YEARLY</option>
+						<option value="4">MONTHLY</option>
+					</select>
+				</td>
+			</tr>
+			</table>
+	</fieldset>
+	<fieldset>
+		<legend> Credit Card Information </legend>
+		<table>
+			<tr>
+			<table>
+				<tr>
+					<th><label>Card Number :</label></th>
+					<td> 
+						<input type="numbers" name="n1" placeholder="0000" size="4" maxsize="4"/>
+						<input type="numbers" name="n2" placeholder="0000" size="4" maxsize="4"/>
+						<input type="numbers" name="n3" placeholder="0000" size="4" maxsize="4"/>
+						<input type="numbers" name="n4" placeholder="0000" size="4" maxsize="4"/>
+					</td>
+				</tr>
+				<tr>
+					<th><label>Card Holder's Name: </th></label>
+					<td> <input type="text" name="cname" placeholder="Enter Card Holder's name" size=25 maxsize=35/></td>
+				</tr>
+				<tr>
+					<th> Expiry date: </th>
+					<td>
+					<label>Month</label>
+							<select name="month">
+									<option value="january" selected>Jan</option>
+           							<option value="february">Feb</option>
+									<option value="march">Mar</option>
+									<option value="april">Apr</option>
+           							<option value="may">May</option>
+									<option value="june">June</option>
+									<option value="july">July</option>
+									<option value="august">Aug</option>
+									<option value="september">Sept</option>
+           							<option value="october">Oct</option>
+									<option value="november">Nov</option>
+									<option value="december">Dec</option>
+							</select>
+           					<label>Year</label>
+							<select name="year">
+									<option value="2021">2021</option>
+									<option value="2022">2022</option>
+									<option value="2023">2023</option>
+           							<option value="2024">2024</option>
+								  <option value="2025">2025</option>
+									<option value="2026">2026</option>
+									<option value="2027">2027</option>
+									
+           						
+							</select>
+					</td>
+					</tr>
+						<th><label>CVV :</label></h>
+						<td> 
+							<input type="numbers" name="cvv" placeholder="0000" size="2" maxsize="3"/>
+						</td>
+					</tr>
+					</tr>
+						<th><label>Amount to be paid:</label></h>
+						<td id="price"> CHOOSE A SUBSCRIPTION </td>
+					</tr>
+				</table>
+		</fieldset>
+		<table width="100%">
+			<tr>
+				<th><input type="button" onclick="checker()" value="Submit"> <input type="reset" value="Reset"></th>
+			</tr>
+		</table>
+	</body>
+ </html>
+ 
+ 
+ 
+
+ 
+ 
